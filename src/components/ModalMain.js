@@ -1,9 +1,23 @@
+import { useEffect } from "react";
 import ModalBody from "./ModalBody";
 import ModalFooter from "./ModalFooter";
 import ModalHeader from "./ModalHeader";
 
 const ModalMain = (props) => {
   const { setPopUp, duringPopUp, dataHeader, dataBody, dataFooter } = props;
+
+  useEffect(() => {
+    const handleEsc = (event) => {
+      if (event.keyCode === 27) {
+        setPopUp(false);
+      }
+    };
+    window.addEventListener("keydown", handleEsc);
+
+    return () => {
+      window.removeEventListener("keydown", handleEsc);
+    };
+  }, []);
 
   return (
     <>
