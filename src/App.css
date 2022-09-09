@@ -1,0 +1,145 @@
+/* The Modal (background) */
+.modal-block {
+  align-items: center;
+  bottom: 0;
+  justify-content: center;
+  left: 0;
+  overflow: hidden;
+  padding: 0.4rem;
+  position: fixed;
+  right: 0;
+  top: 0;
+  display: flex;
+  opacity: 1;
+  z-index: 400;
+}
+
+.modal {
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  overflow-x: hidden;
+  bottom: 0;
+  cursor: default;
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.modal-show {
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  overflow-x: hidden;
+  bottom: 0;
+  cursor: default;
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #8d8d97;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  padding-top: 1.2rem;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Modal CSS */
+.modal-header {
+  padding: 1px 16px;
+  background-color: #2327be;
+  color: white;
+  text-shadow: 0.8px 0.8px #8d8d97;
+}
+
+.modal-body {
+  padding: 2px 16px;
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #2327be;
+  color: white;
+  text-shadow: 0.8px 0.8px #8d8d97;
+}
+
+/* Posisition center DIV */
+.center {
+  margin: auto;
+  width: 80%;
+  border: 3px solid #2327be;
+  padding: 5px;
+}
+
+.center-text {
+  text-align: center;
+  text-shadow: 0.8px 0.8px #8d8d97;
+}
+
+/* Custom button */
+.button {
+  background-color: #2327be;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
